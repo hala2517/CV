@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+
+\name{Chan-Ho, Im}
+\tagline{Team Leader, DX Innovation Department}
+
+\personalinfo{%
+  \email{hala2517@gmail.com}
+  \phone{+82-10-4621-4710}
+  \location{Eumseong-gun, Chungcheongbuk-do, Republic of Korea}
+  \github{hala2517}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+%% ---- LEFT COLUMN ----
+
+\cvsection{Experience}
+
+\cvevent{Team Leader, DX Innovation Dept.}{Cosmecca Korea Co., Ltd.}{Jun 2016 -- Present}{Eumseong-gun, Chungcheongbuk-do}
+\begin{itemize}
+  \item Overseeing company-wide DX \& AX initiatives, on-site improvement activities (TPS), and cost reduction efforts.
+  \item Leading 7 Task Force Teams (TFT) across departments to drive manufacturing innovation and digital transformation.
+  \item \textbf{Achieved a 30\% increase in productivity} and a \textbf{20\% reduction in customer complaints}.
+  \item \textbf{Realized 8 billion KRW in cost savings} for fiscal year 2025.
+\end{itemize}
+
+\cvsection{Capstone Design Project}
+
+\cvevent{YOLO-based Video AI for Automated Line-of-Balance (LOB) Analysis in Manufacturing Packaging Processes}{Sungkyunkwan University -- Dept. of Smart Factory Convergence}{Mar 2026 -- Jun 2026}{Team Leader (Team 5)}
+
+\smallskip
+\textbf{Summary.} YOLOv11-based object detection identifies four classes (Person, Hand, Hat, Product) on a frame-by-frame basis, and SORT/DeepSORT maintains per-worker Track IDs across frames. A GRU-based time-series action recognition model classifies four action types (Pick, Place, Working, Other), and Handling Time \& Cycle Time are derived from RoI entry/exit events. Reliability is secured via $\pm\Delta t$ time-window matching and track-level debouncing. These values are automatically substituted into the LOB formula and visualized through a real-time dashboard.
+
+\smallskip
+\textbf{Key Results.}
+\begin{itemize}
+  \item Detection: mAP@0.5 = 85.0\%, Precision = 87.6\%, Recall = 79.0\%, F1 = 83.0\%.
+  \item LOB agreement with manual measurement: \textbf{95.0\%}.
+  \item Enables automatic conversion of unstructured video into structured productivity metrics (LOB).
+\end{itemize}
+
+\cvsection{Government-Supported Projects}
+
+\begin{itemize}
+  \item \textbf{2026} \quad Manufacturing Robot Revitalization Project
+  \item \textbf{2025} \quad Manufacturing AI Specialization Project
+  \item \textbf{2024} \quad Digital Twin \& Safety Enhancement Project
+  \item \textbf{2023} \quad Manufacturing Robot Plus Project
+  \item \textbf{2022} \quad K-Smart Lighthouse Factory
+  \item \textbf{2021} \quad Smart Factory Advancement Project
+  \item \textbf{2020} \quad Smart Factory Foundation Project
+\end{itemize}
+{\small\color{body}\textit{All projects supported by the Ministry of SMEs and Startups (MSS), Republic of Korea.}}
+
+\cvsection{Reviewed Literature}
+
+{\small\color{body}\textit{Selected references reviewed by Team 5 during the capstone project on Video AI-based LOB analysis.}}
+
+\begin{enumerate}\small
+  \item YOLO-DS: Fine-Grained Feature Decoupling via Dual-Statistic Synergy Operator for Object Detection.
+  \item Detection of Anomalous Behavior of Manufacturing Workers Using Deep Learning-Based Recognition of Human-Object Interaction.
+  \item SMA-YOLO: A Multi-Scale Object Detection Algorithm for UAV Remote Sensing Images.
+  \item YOLOv11: An Overview of the Key Architectural Enhancements.
+  \item A Deep Context Learning-Based PCB Defect Detection Model with Anomalous Trend Alarming System.
+  \item LiVOS: Light Video Object Segmentation with Gated Linear Matching.
+  \item Towards Adaptive Human-Centric Video Anomaly Detection.
+\end{enumerate}
+
+\switchcolumn
+
+%% ---- RIGHT COLUMN ----
+
+\cvsection{My Life Philosophy}
+
+\begin{quote}
+``Continuous improvement is not a destination, but a way of thinking and living.''
+\end{quote}
+
+\cvsection{Research Outcomes}
+
+\cvachievement{\faFileAlt}{Patent}{\textit{Real-time LOB Computation Program based on YOLO and GRU-driven Time-Series Action Recognition.}}
+
+\divider
+
+\cvachievement{\faCode}{Software Registration}{\textit{Real-time LOB Computation Program based on YOLO and GRU-driven Time-Series Action Recognition.}}
+
+\divider
+
+\cvachievement{\faBook}{Publication}{\textit{A Study on Worker Detection and Automated Line-of-Balance (LOB) Analysis in Manufacturing Packaging Lines Using YOLO-Based Video AI.}}
+
+\cvsection{Most Proud of}
+
+\cvachievement{\faTrophy}{Presidential Prize}{Awarded the Presidential Prize at the Manufacturing Innovation Awards for improving productivity through Smart Factory establishment.}
+
+\divider
+
+\cvachievement{\faIndustry}{8B KRW Cost Savings}{Realized 8 billion KRW in cost savings through DX and process innovation initiatives in FY2025.}
+
+\divider
+
+\cvachievement{\faChartLine}{30\% Productivity Gain}{Achieved a 30\% productivity increase and 20\% reduction in customer complaints across manufacturing operations.}
+
+\cvsection{Strengths}
+
+\cvtag{Smart Factory Planning}
+\cvtag{AI/DX Transformation}\\
+\cvtag{Process Optimization}
+
+\divider\smallskip
+
+\cvtag{Computer Vision}
+\cvtag{YOLO / GRU}\\
+\cvtag{Team Leadership}
+\cvtag{Manufacturing Innovation}
+
+\cvsection{Languages}
+
+\cvskill{Korean}{5}
+\divider
+\cvskill{English}{4}
+
+\cvsection{Education}
+
+\cvevent{Graduate Studies}{Sungkyunkwan University}{}{}
+Department of Smart Factory Convergence \\
+\textit{Capstone Team Leader (Team 5)}
+
+\cvsection{Contact}
+
+\printinfo{\faEnvelope}{hala2517@gmail.com}[mailto:hala2517@gmail.com]
+\smallskip
+\printinfo{\faPhone}{+82-10-4621-4710}
+\smallskip
+\printinfo{\faGithub}{github.com/hala2517}[https://github.com/hala2517]
+\smallskip
+\printinfo{\faMapMarker*}{Eumseong-gun, Chungcheongbuk-do\\Republic of Korea}
+
+\end{paracol}
+
+\end{document}
